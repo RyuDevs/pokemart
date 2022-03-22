@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'NotoSerif';
+    src: url(../fonts/Noto_Serif/NotoSerif-Regular.ttf) format("truetype"),
+         url(../fonts/Noto_Serif/NotoSerif-Bold.ttf) format("truetype"),
+         url(../fonts/Noto_Serif/NotoSerif-Italic.ttf) format("truetype"),
+         url(../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Chakra';
+    src: url(../fonts/Chakra_Petch/ChakraPetch-Regular.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-Italic.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-Medium.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-MediumItalic.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-SemiBoldItalic.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-Bold.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-BoldItalic.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-Light.ttf) format("truetype"),
+         url(../fonts/Chakra_Petch/ChakraPetch-LightItalic.ttf) format("truetype");
+}
