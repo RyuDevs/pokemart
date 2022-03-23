@@ -88,10 +88,11 @@ header ul li{
 
 .banner {
     width: 100%;
-    padding: 5.75rem 2rem;
+    height: 49.6875rem;
+    padding: 5.75rem 0;
     background: linear-gradient(179deg, rgba(20, 116, 195, 1) 0%  , rgba(116, 193, 243, 1) 45% );
     justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 
 .banner .img-wrapper {
@@ -99,7 +100,8 @@ header ul li{
     background-size: contain;
     background-repeat: no-repeat;
     background-position:  center;
-    height: 15.625rem;
+    height: 100%;
+    display: flex;
 }
 
 .slogan-box {
@@ -107,9 +109,11 @@ header ul li{
     border: 0.3125rem solid rgba(6, 33, 56, 0.93);
     width: 15rem;
     padding: 1rem;
+    margin: 2rem;
     color: rgb(139, 211, 255);
     font-weight: bold;
     font-size: 1.5rem;
+    align-self: center;
 }
 
 .slogan-content i{
