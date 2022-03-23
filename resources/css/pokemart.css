@@ -61,12 +61,13 @@ header a:hover {
 header .logo {
     display: flex;
     align-items: center;
+    padding-left: 1rem;
 }
 
 header .logo img {
     width: auto;
     height: 1.5rem;
-    margin-right: 0.25rem;
+    margin-right: 0.8rem;
 }
 
 header nav {
