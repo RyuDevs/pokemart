@@ -99,12 +99,12 @@ header ul li{
     background-size: contain;
     background-repeat: no-repeat;
     background-position:  center;
-    height: 250px;
+    height: 15.625rem;
 }
 
 .slogan-box {
     background: linear-gradient(125deg, rgba(6, 33, 56, 0.93) 25%, 70%, rgba(86, 143 , 175, 0.93));
-    border: 5px solid rgba(6, 33, 56, 0.93);
+    border: 0.3125rem solid rgba(6, 33, 56, 0.93);
     width: 15rem;
     padding: 1rem;
     color: rgb(139, 211, 255);
