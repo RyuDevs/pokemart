@@ -2,11 +2,7 @@ html {
     font-family: 'NotoSerif', Georgia, 'Times New Roman', Times, serif;
 }
 
-p {
-    margin: 0;
-}
-
-body{
+body, p, ul{
     margin: 0;
 }
 
@@ -22,6 +18,22 @@ h1, h2, h3, h4 ,h5, h6 {
     text-align: center;
 }
 
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0.3125rem 0.1875rem rgb(139, 211, 255);  
+    margin: 0;
+}
+
+#items h2, #locations h2 {
+    text-shadow: 0.3125rem 0.1875rem rgba(6, 33, 56, 1) 
+}
+
 ul {
     padding: 0;
 }
@@ -34,6 +46,10 @@ ul {
     text-align: center;
 }
 
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
 
 /* HEADER AND NAVBAR */
 header {
@@ -114,6 +130,7 @@ header ul li{
     font-weight: bold;
     font-size: 1.5rem;
     align-self: center;
+    box-shadow: 0 0 1rem rgba(6, 33, 56, 1);
 }
 
 .slogan-content i{
@@ -130,6 +147,7 @@ header ul li{
     border: 0.125rem solid white;
     text-align: center;
     font-size: 1.25rem;
+    padding: 0.5rem;
 }
 
 .slogan-content button:hover {
@@ -137,16 +155,35 @@ header ul li{
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.8);
     border: 0.125rem solid transparent;
+    box-shadow: 0 0 .5rem rgb(139, 211, 255);
 }
 
 .slogan-content p {
     margin-bottom: 1rem;
+    text-shadow: 0.3125rem 0.3125rem 0.125rem rgba(6, 33, 56, 0.93);
 }
 
 
 /* END OF BANNER SECTION */
 
 /* POKEBALLS SECTION */
+
+ #pokeballs {
+     background-color: rgb(238, 214, 178);
+     background: url(../images/pokeball-interior-bg.png) no-repeat center;
+     background-size: 100%;
+     background-attachment: fixed;
+ }
+ 
+ #pokeballs h3 {
+    font-size: 1.75rem;
+    color: white;
+ }
+
+ #pokeballs .products {
+    padding-top: 5rem;
+ }
+
  #pokeballs .products img {
      width: 7.5rem;
      height: 7.5rem;
@@ -159,19 +196,72 @@ header ul li{
      list-style: none;
  }
 
+ #pokeballs .products > li {
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 2rem 0 2rem;
+    margin: 1rem;
+    flex-grow: 1;
+ }
+
+ #pokeballs .products > li:hover {
+    box-shadow: 0.3125rem 0.3125rem 0.5rem rgba(6, 33, 56, 0.8);
+    cursor: pointer;
+ }
+
+ #pokeballs .premier {
+    border-radius: 1rem;
+    background-color: rgba(6, 33, 56, 0.8);
+    padding: 2rem 2rem 0 2rem;
+    margin: 1rem;
+    flex-grow: 1;
+ }
+
+ #pokeballs .premier:hover {
+    box-shadow: 0.3125rem 0.3125rem 0.5rem rgba(6, 33, 56, 0.8);
+    cursor: pointer;
+ }
+
+ #pokeballs .premier li{
+     display: flex;
+     justify-content: center;
+     color: white;
+     text-align: center;
+ }
+
+ #pokeballs .premier a {
+     color: rgba(168, 49, 43, 1);
+ }
+
 /* END OF POKEBALL SECTION */
 
 /* ITEMS SECTION */
+
+#items {
+    background-color:rgba(20, 116, 195, 1);
+}
+
 #items .products img {
     width: 4.125rem;
     height: 5.625rem;
 }
 
+#items .product-container {
+    height: 100%;
+}
+
+#items .products {
+    padding-top: 5rem;
+
+}
 
 /* END OF ITEMS SECTION */
 
 /* LOCATIONS SECTION */
-
+#locations {
+    background: url(../images/map-bg.jpg) no-repeat center;
+    background-size: cover;
+}
 
 
 /* END OF LOCATIONS SECTION */
