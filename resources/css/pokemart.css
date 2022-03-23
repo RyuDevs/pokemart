@@ -2,6 +2,177 @@ html {
     font-family: 'NotoSerif', Georgia, 'Times New Roman', Times, serif;
 }
 
+p {
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
 .logo {
     font-family: 'Chakra', Arial, Helvetica, sans-serif;
 }
+
+a {
+    color: rgb(139, 211, 255);
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+
+/* HEADER AND NAVBAR */
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.3125rem;
+    width: 100%;
+    color: rgb(139, 211, 255);
+    background-color: transparent;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+header a:hover {
+    font-size: 1.25rem;
+    color: rgb(139, 211, 255);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: auto;
+    height: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+header nav {
+    padding-right: 2rem;
+}
+header ul li{
+    display: inline;
+    list-style: none;
+    padding: 0.75rem;
+}
+
+/* END OF HEADER AND NAVBAR */
+
+/* MAIN */
+/* END OF MAIN */
+
+/* BANNER SECTION */
+
+.banner {
+    width: 100%;
+    padding: 5.75rem 2rem;
+    background: linear-gradient(179deg, rgba(20, 116, 195, 1) 0%  , rgba(116, 193, 243, 1) 45% );
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .img-wrapper {
+    background-image: url(../images/market-building.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  center;
+    height: 250px;
+}
+
+.slogan-box {
+    background: linear-gradient(125deg, rgba(6, 33, 56, 0.93) 25%, 70%, rgba(86, 143 , 175, 0.93));
+    border: 5px solid rgba(6, 33, 56, 0.93);
+    width: 15rem;
+    padding: 1rem;
+    color: rgb(139, 211, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.slogan-content i{
+    font-size: 1.5rem;
+}
+
+.slogan-content button {
+    width: 100%;
+    border-radius: 0.5rem;
+    font-family: 'NotoSerif';
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.125rem solid white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.slogan-content button:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.125rem solid transparent;
+}
+
+.slogan-content p {
+    margin-bottom: 1rem;
+}
+
+
+/* END OF BANNER SECTION */
+
+/* POKEBALLS SECTION */
+ #pokeballs .products img {
+     width: 7.5rem;
+     height: 7.5rem;
+ }
+
+ #pokeballs .premier ul{
+     display: flex;
+     display: wrap;
+     justify-content: center;
+     list-style: none;
+ }
+
+/* END OF POKEBALL SECTION */
+
+/* ITEMS SECTION */
+#items .products img {
+    width: 4.125rem;
+    height: 5.625rem;
+}
+
+
+/* END OF ITEMS SECTION */
+
+/* LOCATIONS SECTION */
+
+
+
+/* END OF LOCATIONS SECTION */
+
+/* PRODUCT CONTAINER AND PRODUCTS CLASS */
+
+
+
+/* END OF PRODUCT CONTAINER AND PRODUCTS CLASS*/
