@@ -152,6 +152,7 @@ header ul li{
     background-color: rgba(255, 255, 255, 0.8);
     border: 0.125rem solid transparent;
     box-shadow: 0 0 .5rem rgb(139, 211, 255);
+    cursor: pointer;
 }
 
 .slogan-content p {
@@ -353,8 +354,45 @@ header ul li{
 #locations {
     background: url(../images/map-bg.jpg) no-repeat center;
     background-size: cover;
+    color:rgba(6, 33, 56);
 }
 
+.location-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 100%;
+}
+
+.location-banner .location {
+    height: 400px;
+    width: 300px;
+    padding: 0 1rem;
+    display: grid;
+    grid-template: repeat(3, 133px) / 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#locations i {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-right: rgba(6, 33, 56, 1) 1px solid;
+}
+
+#locations p {
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}
 
 /* END OF LOCATIONS SECTION */
 
