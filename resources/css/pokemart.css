@@ -24,14 +24,10 @@ section {
 }
 
 section h2 {
-    color: white;
+    color: rgba(6, 33, 56);
     font-size: 3rem;
     text-shadow: 0.3125rem 0.1875rem rgb(139, 211, 255);  
     margin: 0;
-}
-
-#items h2, #locations h2 {
-    text-shadow: 0.3125rem 0.1875rem rgba(6, 33, 56, 1) 
 }
 
 ul {
@@ -197,29 +193,45 @@ header ul li{
  }
 
  #pokeballs .products > li {
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 2rem 2rem 0 2rem;
     margin: 1rem;
     flex-grow: 1;
+    box-shadow: 0 0.25rem 0.5rem rgba(6, 33, 56, 0.8);
  }
 
  #pokeballs .products > li:hover {
-    box-shadow: 0.3125rem 0.3125rem 0.5rem rgba(6, 33, 56, 0.8);
+    box-shadow: 0 0.5rem 0.5rem rgba(6, 33, 56, 1);
     cursor: pointer;
  }
 
  #pokeballs .premier {
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     background-color: rgba(6, 33, 56, 0.8);
     padding: 2rem 2rem 0 2rem;
     margin: 1rem;
     flex-grow: 1;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
  }
 
  #pokeballs .premier:hover {
-    box-shadow: 0.3125rem 0.3125rem 0.5rem rgba(6, 33, 56, 0.8);
+    box-shadow: 0 0.75rem 0.5rem rgba(6, 33, 56, 1);
     cursor: pointer;
+ }
+
+ #pokeballs .products > li:hover img {
+    animation: wiggle 1s ease-in-out;
+ }
+ #pokeballs .products > li:hover::after img {
+    animation: anti-wiggle 1s ease-in-out;
+ }
+
+ #pokeballs .premier:hover img {
+    animation: wiggle 1s ease-in-out;
+ }
+ #pokeballs .premier:hover::after img {
+    animation: anti-wiggle 1s ease-in-out;
  }
 
  #pokeballs .premier li{
@@ -238,7 +250,7 @@ header ul li{
 /* ITEMS SECTION */
 
 #items {
-    background-color:rgba(20, 116, 195, 1);
+    background-color:rgba(242, 247, 242, 1);
 }
 
 #items .products img {
@@ -252,10 +264,78 @@ header ul li{
 
 #items .products {
     padding-top: 5rem;
-
+    justify-content: space-between;
 }
 
+#items .products > li{
+    width: 200px;
+    border-radius: 0.25rem;
+    background: rgba(242, 247, 242, 0.5);
+    padding: 2rem 2rem 0 2rem;
+    margin: 1rem;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px rgba(6, 33, 56, 0.8);
+}
+
+#items .products > li:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(6, 33, 56, 1);
+}
+
+
 /* END OF ITEMS SECTION */
+
+
+/* TESTIMONIALS SECTION */
+
+#testimonials h2 {
+    margin-bottom: 4rem;
+}
+
+.testimonial-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-wrapper .qoutes {
+    margin-bottom: 4rem;
+    height: 32.8125rem;
+}
+
+.testimonial-wrapper .rounded-img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.testimonial-wrapper .rounded-img > img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-wrapper h3 {
+    margin-bottom: 0;
+    color: rgba(6, 33, 56);
+}
+.testimonial-wrapper h4 {
+    margin-top: 0;
+    color: #A69CAC;
+}
+
+.testimonial-wrapper p {
+    width: 15rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #0E79B2;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* END OF TESTIMONIALS SECTION */
 
 /* LOCATIONS SECTION */
 #locations {
@@ -271,3 +351,49 @@ header ul li{
 
 
 /* END OF PRODUCT CONTAINER AND PRODUCTS CLASS*/
+
+/* CSS wiggle effect for pokeballs*/
+@keyframes wiggle {
+    20% {
+      transform: rotate(7deg);
+    }
+    
+    40% {
+      transform: rotate(-14deg);
+    }
+    
+    60% {
+      transform: rotate(4deg);
+    }
+    
+    80% {
+      transform: rotate(-2deg);
+    }
+    
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes anti-wiggle {
+    20% {
+      transform: translateX(4px) rotate(-7deg);
+    }
+    
+    40% {
+      transform: translateX(-8px)  rotate(14deg);
+    }
+    
+    60% {
+      transform: translateX(2px)  rotate(-4deg);
+    }
+    
+    80% {
+      transform: translateX(-1px)  rotate(2deg);
+    }
+    
+    100% {
+      transform: translateX(0px) rotate(0deg);
+    }
+  }
+/* END OF CSS wiggle effect for pokeballs*/
