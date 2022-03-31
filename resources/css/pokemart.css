@@ -312,6 +312,18 @@ header ul li{
     margin: 0 auto;
 }
 
+.bg1{
+    background-color: #EE4266
+}
+
+.bg2{
+    background-color: #F05D23;
+}
+
+.bg3{
+    background-color: #3A5743;
+}
+
 .testimonial-wrapper .rounded-img > img {
     width: 100%;
     height: auto;
