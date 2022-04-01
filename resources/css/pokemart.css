@@ -47,6 +47,17 @@ figcaption {
     font-size: 1.5rem;
 }
 
+
+@media only screen and (max-width: 530px ) 
+{
+    section {
+        padding-top: 12.75rem;
+    }
+    footer {
+        padding-top: 12.75rem;
+    }
+}
+
 /* HEADER AND NAVBAR */
 header {
     position: fixed;
@@ -94,6 +105,34 @@ header ul li{
     display: inline;
     list-style: none;
     padding: 0.75rem;
+}
+
+@media only screen and ( max-width: 670px ) {
+    header h1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 534px ) 
+{
+    header {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 530px ) 
+{
+    header {
+        height: 12.75rem;
+    }
+    nav {
+        width: 100%;
+    }
+
+    header ul li{
+        display: block;
+        text-align: center;
+    }
 }
 
 /* END OF HEADER AND NAVBAR */
@@ -472,7 +511,7 @@ header ul li{
         background-color: rgba(58, 87, 67, 0.8);
         background-size: contain;
     }
-    
+
     footer aside {
         width: 100%;
         margin-top: 1rem;
