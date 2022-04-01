@@ -20,7 +20,7 @@ h1, h2, h3, h4 ,h5, h6 {
 
 
 section {
-    padding: 2rem 0;
+    padding: 5.3125rem 0 2rem 0;
 }
 
 section h2 {
@@ -57,6 +57,11 @@ header {
     width: 100%;
     color: rgb(139, 211, 255);
     background-color: transparent;
+}
+
+header.active {
+    background: rgba(6, 33, 56, 0.93);
+    z-index: 20;
 }
 
 header a {
@@ -395,6 +400,10 @@ header ul li{
     margin: 1rem;
 }
 
+#locations h2 {
+    margin-bottom: 2rem;
+}
+
 #locations i {
     font-size: 1.5rem;
     font-weight: bold;
@@ -406,6 +415,7 @@ header ul li{
     padding: 0.5rem;
     font-weight: bold;
 }
+
 
 /* END OF LOCATIONS SECTION */
 
