@@ -430,14 +430,15 @@ header ul li{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-image: url(../images/credits-bg.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+
     }
 
     footer h2 {
         width: 100%;
+    }
+
+    div.card:hover{
+        cursor: pointer;
     }
 
     .card {
@@ -450,6 +451,28 @@ header ul li{
         margin-bottom: 2rem;
     }
 
+    .card.bg {
+        min-height: 19.25rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .shattered {
+        background-image: url("../images/pokeball-interior-bg.png");
+    }
+
+    .macrovector {
+        background-image: url("../images/market-building.png");
+        background-color: rgba(116, 193, 243, 1);
+    }
+
+    .card.bg.gamefreak {
+        background-image: url("../images/testimonials/Cynthia.png");
+        background-color: rgba(58, 87, 67, 0.8);
+        background-size: contain;
+    }
+    
     footer aside {
         width: 100%;
         margin-top: 1rem;
