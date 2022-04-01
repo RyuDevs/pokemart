@@ -302,7 +302,9 @@ header ul li{
 
 .testimonial-wrapper .qoutes {
     margin-bottom: 4rem;
-    height: 32.8125rem;
+    height: 39.0625rem;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .testimonial-wrapper .rounded-img {
@@ -330,6 +332,11 @@ header ul li{
     height: auto;
 }
 
+.testimonial-wrapper .qoutes:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(6, 33, 56, 0.8);
+}
+
+
 .testimonial-wrapper h3 {
     margin-bottom: 0;
     color: rgba(6, 33, 56);
@@ -346,6 +353,12 @@ header ul li{
     color: #0E79B2;
     font-weight: bold;
     font-style: italic;
+    line-height: 1.7rem;
+}
+
+.testimonial-wrapper p > span {
+    font-family: 'Proza Libre', 'Chakra', sans-serif;
+    font-size: 2rem;
 }
 
 /* END OF TESTIMONIALS SECTION */

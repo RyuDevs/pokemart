@@ -19,3 +19,17 @@
          url(../fonts/Chakra_Petch/ChakraPetch-Light.ttf) format("truetype"),
          url(../fonts/Chakra_Petch/ChakraPetch-LightItalic.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: 'Proza Libre';
+    src: url(../fonts/Proza_Libre/ProzaLibre-Regular.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-Italic.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-SemiBold.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-SemiBoldItalic.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-Medium.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-MediumItalic.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-Bold.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-BoldItalic.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-ExtraBold.ttf) format("truetype"),
+         url(../fonts/Proza_Libre/ProzaLibre-ExtraBoldItalic.ttf) format("truetype");
+}
