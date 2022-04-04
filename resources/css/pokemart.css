@@ -86,6 +86,10 @@ header a:hover {
     color: rgb(139, 211, 255);
 }
 
+header a:hover i {
+    color:rgb(168, 49, 43);
+}
+
 header .logo {
     display: flex;
     align-items: center;
@@ -123,7 +127,7 @@ header ul li{
 @media only screen and (max-width: 530px ) 
 {
     header {
-        height: 12.75rem;
+        height: 15.75rem;
     }
     nav {
         width: 100%;
