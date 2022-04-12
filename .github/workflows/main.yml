@@ -1,4 +1,4 @@
-name: urlwatch-test
+name: AWS S3 Deployment
 on:
   push:
     branches:
@@ -17,7 +17,7 @@ jobs:
         with:
           timezone: Europe/Berlin
       - uses: actions/checkout@v2
-      - name: Configure AWS credentialsfrom Test account
+      - name: Configure AWS OIDC credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::304793766012:role/sesv2_suppression-destination_read-only
