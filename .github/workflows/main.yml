@@ -20,7 +20,7 @@ jobs:
       - name: Configure AWS OIDC credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::304793766012:role/sesv2_suppression-destination_read-only
+          role-to-assume: arn:aws:iam::304793766012:role/AWS-Deploy
           aws-region: eu-central-1
       - name: Copy files to the test website with the AWS CLI
         run: |
