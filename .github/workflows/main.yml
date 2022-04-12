@@ -22,6 +22,9 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::304793766012:role/AWS-Deploy
           aws-region: eu-central-1
-      - name: Copy files to the test website with the AWS CLI
+      - name: Copy resource files to the test website with the AWS CLI
         run: |
-          aws s3 sync . s3://pokemart-bucket
+          aws s3 sync ./resources/* s3://pokemart-bucket
+      - name: Copy indexfiles to the test website with the AWS CLI
+        run: |
+          aws s3 sync ./index.html s3://pokemart-bucket
